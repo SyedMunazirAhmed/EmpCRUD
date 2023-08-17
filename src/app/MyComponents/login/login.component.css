@@ -1,0 +1,25 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css";
+.main {
+  margin-top: 15vh;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 50vw;
+  padding: 2.5rem;
+  border: black 0.5px solid;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 6px 6px 15px rgb(0, 0, 0);
+}
+input {
+  font-size: large;
+  padding: 12px;
+  width: 20vw;
+}
+.form-check-input {
+  width: auto;
+  padding: 8px;
+}

@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "emplyoee": [
+    {
+      "id": "87656789",
+      "name": "Syed Munazir Ahmed",
+      "email": "munazirsyed17@gmail.com",
+      "phone": 23455678
+    },
+    {
+      "id": "987656789",
+      "name": "Syed Munazir Ahmed",
+      "email": "munazirsyed17@gmail.com",
+      "phone": 2345678
+    },
+    {
+      "id": "987136552",
+      "name": "wertyuiodgheb",
+      "email": "jhvdkhbd@gmail.com",
+      "phone": 7858687
+    },
+    {
+      "id": "198762",
+      "name": "fdgheb",
+      "email": "jhvdkhbd@gmail.com",
+      "phone": 7858687
+    },
+    {
+      "id": "76898",
+      "name": "Syed Munazir Ahmed",
+      "email": "munazirsyed17@gmail.com",
+      "phone": 76545788
+    }
+  ],
+  "credentials": [
+    {
+      "id": "admin@gmail.com",
+      "name": "admin",
+      "password": "1234"
+    },
+    {
+      "id": "munazirsyed17@gmail.com",
+      "name": "Syed Munazir Ahmed",
+      "password": "munazir1234"
+    },
+    {
+      "id": "user@gmail.com",
+      "name": "User 1",
+      "password": "9876"
+    }
+  ]
+}

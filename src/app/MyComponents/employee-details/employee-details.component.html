@@ -1,0 +1,33 @@
+<div class="container mt-3">
+  <label>Employee id : {{ detail.id }}</label> <br />
+  <label>Employee Name : {{ detail.name }}</label> <br />
+  <!-- <span>Employee Email : {{ detail.email }}</span> <br /><span
+    >Employee phone : {{ detail.phone }}</span
+  >
+  <br /> -->
+  <label>Employee Email : {{ detail.email }}</label> <br />
+  <label>Employee phone : {{ detail.phone }}</label> <br />
+
+  <p style="padding: 20px;" class="justify-content-evenly">
+    Meet <b>{{ detail.name }}</b>, a valued member of our team at Our Organization
+    with his employee ID : <b>{{detail.id}}</b>. <br>
+    With an impressive track record of excellence and a passion for their
+    work, {{ detail.name }} is an invaluable asset to our organization. Their
+    unwavering commitment to delivering exceptional results is evident in every
+    project they undertake. {{ detail.name }}brings a unique blend of
+    expertise, creativity, and dedication to the table, consistently exceeding
+    expectations and going above and beyond to ensure success.
+    <br>
+    Not only does {{ detail.name }} possess a deep understanding of their field, but they also
+    possess excellent communication and collaboration skills. Their ability to
+    effectively communicate complex ideas and work seamlessly with team members
+    and stakeholders makes them a true team player.
+    You can contact {{detail.name}} through their email or phone <br>
+    <b>
+    email : {{detail.email}} <br>
+    phone : {{detail.phone}}
+    </b>
+  </p>
+
+  <button class="btn btn-danger mt-5" routerLink="/layout/table">Back</button>
+</div>

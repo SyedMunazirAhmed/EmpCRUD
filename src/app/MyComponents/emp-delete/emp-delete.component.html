@@ -1,0 +1,12 @@
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Confirm Delete</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="dismiss()"></button>
+	</div>
+	<div class="modal-body">
+    <form (ngSubmit)="confirmDel()" >
+      <p>Do You Want to delete this row Permanently?</p>
+      <button type="submit"   class="btn btn-primary">Delete</button>
+       &nbsp;
+      <button type="button" class="btn btn-danger" aria-label="Close" (click)="dismiss()">Cancel</button>
+    </form>
+	</div>

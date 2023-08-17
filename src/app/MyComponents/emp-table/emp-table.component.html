@@ -1,0 +1,16 @@
+<div class="container-fluid m-2 p-1">
+  <button class="btn m-3 add" (click)="open('')">
+    <i class="bi bi-plus-circle-fill"></i>
+  </button>
+
+  <table class="p-5 m-5 mt-2">
+    <app-table
+      [tableconfig]="tableConfig"
+      (actMsg)="checkdata($event)"
+      (actData)="getData($event)"
+      [tableData]="emp"
+    ></app-table>
+  </table>
+</div>
+
+<router-outlet></router-outlet>

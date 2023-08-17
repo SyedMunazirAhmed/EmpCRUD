@@ -1,0 +1,32 @@
+<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">{{title}}</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="dismiss()"></button>
+	</div>
+
+	<div class="modal-body">
+    <form [formGroup]="EmpForm" (ngSubmit)="onSubmit(f)" #f="ngForm" >
+
+      <div class="form-floating mb-3">
+        <input  class="form-control" id="floatingInput" formControlName="id" id="id" placeholder="ex:123">
+        <label for="floatingInput" class="form-label">Employee Id</label>
+      </div>
+
+      <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" formControlName="name" id="name" placeholder="name">
+          <label for="floatingInput" class="form-label">Name</label>
+      </div>
+      
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" formControlName="email" id="email" placeholder="name@example.com">
+        <label for="floatingInput" class="form-label">Email address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="floatingInput" formControlName="phone" id="number" placeholder="name@example.com">
+        <label for="floatingInput" class="form-label">phone</label>
+      </div>
+      
+      <button type="submit"  [disabled]="!EmpForm.valid"  class="btn btn-primary">Submit</button>
+      
+    </form>
+	</div>

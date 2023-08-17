@@ -1,0 +1,45 @@
+<div class="main">
+  <div class="container">
+    <h1 class="text-center m-3 text-uppercase">
+      Welcome <i class="bi bi-unlock"></i>
+    </h1>
+    <p class="text-center">Enter your details to Login</p>
+
+    <form
+      [formGroup]="loginForm"
+      class="text-center align-content-center"
+      (ngSubmit)="loginSubmit(this.f.value.email, this.f.value.password)"
+      #f="ngForm"
+    >
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          id="floatingInput"
+          formControlName="email"
+          id="email"
+          placeholder="Email"
+        />
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="password"
+          id="floatingInput"
+          formControlName="password"
+          id="password"
+          placeholder="password"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+      <p class="mt-1">
+        Forgot <span><a class="text-primary" href="">Username</a> </span> /
+        <span><a class="text-primary" href="">Password</a> </span>
+      </p>
+      <p class="mt-1">
+        Don't have an Account <span><a href="">Signup</a></span>
+      </p>
+    </form>
+  </div>
+</div>
+<router-outlet></router-outlet>

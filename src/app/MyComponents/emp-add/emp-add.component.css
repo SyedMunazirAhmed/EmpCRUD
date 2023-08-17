@@ -1,0 +1,12 @@
+input {
+  border: none !important ;
+  border-bottom: 1px solid black !important;
+}
+input:invalid::-webkit-validation-bubble{
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+
+}

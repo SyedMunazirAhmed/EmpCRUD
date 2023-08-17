@@ -1,0 +1,41 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "../dashboard/dashboard.component.css";
+.conatiner {
+  margin: 0 !important;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.btn-delete {
+  color: rgb(255, 0, 0);
+}
+.add {
+  font-size: 30px;
+  color: green;
+}
+.detail {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(76, 129, 76);
+  border: 1px solid;
+}
+th {
+  margin-bottom: 30px;
+}
+tr {
+  border-bottom: 1px solid black;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+table {
+  margin: 0;
+  border-bottom: 1px solid;
+  box-shadow: 5px 10px rgba(94, 93, 93, 0.413);
+}
+.navbar-brand {
+  margin-left: 30vw;
+  text-align: center !important;
+}
+.container-fluid {
+  justify-content: start;
+}

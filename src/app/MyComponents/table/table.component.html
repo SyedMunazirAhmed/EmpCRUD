@@ -1,0 +1,28 @@
+<thead>
+  <tr>
+    <th *ngFor="let columns of tableconfig?.columns">
+      {{ columns.title }} &nbsp;
+    </th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let row of tableData">
+    <ng-container *ngFor="let column of tableconfig?.columns">
+      <td *ngIf="column.dataProperty != 'action'">
+        {{ row[column.dataProperty] }}
+      </td>
+      <td *ngIf="column.dataProperty == 'action'">
+        <button class="btn btn-delete" (click)="action('delete', row)">
+          <i class="bi bi-trash-fill"></i>
+        </button>
+
+        <button class="btn btn-edit mx-2" (click)="action('edit', row)">
+          <i class="bi bi-pencil-fill bg-transparent"></i>
+        </button>
+        <button class="btn detail mx-2" (click)="action('getDetails', row)">
+          <a>Get Details</a>
+        </button>
+      </td>
+    </ng-container>
+  </tr>
+</tbody>

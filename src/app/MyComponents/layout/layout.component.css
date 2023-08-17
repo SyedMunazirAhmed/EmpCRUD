@@ -1,0 +1,87 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css";
+/* navbar.component.css */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-toggler.collapsed .icon-bar {
+  background-color: #fff;
+}
+
+.sidebar {
+  position: fixed;
+  left: -100px;
+  background-color: #ffffff;
+  transition: left 0.3s;
+  height: 100%;
+}
+a {
+  border: none;
+}
+.sidebar.open {
+  left: 0;
+  z-index: 1;
+}
+
+.sidebar-nav {
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  position: relative;
+  padding: 10px 0;
+}
+
+.sidebar-nav li a {
+  display: block;
+  padding: 10px 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: large;
+}
+.sidebar-nav li a:hover {
+  color: rgb(56, 56, 196);
+  background-color: rgba(121, 123, 123, 0.432);
+}
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.close-button {
+  position: absolute;
+  padding: 7px;
+  margin: 20px 0px 0px 15px;
+  font-size: 30px;
+  color: #000000;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#sidebar-nav {
+  width: 160px;
+}
+
+.scrollable-content {
+  height: 90vh; /* Adjust the height as per your requirements */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
